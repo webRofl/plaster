@@ -155,7 +155,11 @@ section {
 }
 @media (max-width: 991px) {
   .main {
-    background-position: top right;
+    background-position: top left;
+  }
+  .wrap-blog,
+  .logo {
+    text-align: center;
   }
   .phone-block {
     text-align: center;
