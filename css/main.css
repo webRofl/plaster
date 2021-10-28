@@ -48,6 +48,12 @@ a:focus {
 section {
   padding: 10rem 0;
 }
+.section-header {
+  margin: 2rem 0 10rem;
+  font-family: "Ubuntu_bold", sans-serif;
+  text-align: center;
+  font-size: 3.6rem;
+}
 /* main */
 .main {
   background: #ffffff url(../img/main-bg.jpg) center center no-repeat;
@@ -146,6 +152,52 @@ section {
   height: 7rem;
   line-height: 7rem;
   color: #1a1820;
+}
+/* Slider Settings */
+.features-block {
+  text-align: center;
+}
+.features-block h3 {
+  font-family: "Ubuntu_bold", sans-serif;
+  font-size: 2rem;
+  margin-bottom: 3rem;
+}
+.features-block p {
+  font-size: 1.4rem;
+  display: inline-block;
+  width: 80%;
+}
+.features-img {
+  height: 8rem;
+  margin-bottom: 3rem;
+}
+.features-img img {
+  display: block;
+  margin: 0 auto;
+}
+.slick-active {
+  outline: none;
+}
+.arrow {
+  border: none;
+  background-size: 70%;
+  position: absolute;
+  z-index: 99;
+  width: 2rem;
+  height: 2rem;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+.prev {
+  left: 0;
+  background: url(../img/left-arrow.svg) center no-repeat;
+  background-size: 70%;
+}
+.next {
+  right: 0;
+  background: url(../img/right-arrow.svg) center no-repeat;
+  background-size: 70%;
 }
 /* Media Settings */
 @media (max-width: 1201px) {

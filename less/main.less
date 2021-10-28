@@ -77,6 +77,13 @@ section {
   padding: 10rem 0;
 }
 
+.section-header {
+  margin: 2rem 0 10rem;
+  .bold();
+  text-align: center;
+  font-size: 3.6rem;
+}
+
 /* main */
 
 .main {
@@ -179,6 +186,59 @@ section {
   height: 7rem;
   line-height: 7rem;
   color: @text;
+}
+
+/* Slider Settings */
+
+.features {
+  &-block {
+    text-align: center;
+    h3 {
+      .bold();
+      font-size: 2rem;
+      margin-bottom: 3rem;
+    }
+    p {
+      font-size: 1.4rem;
+      display: inline-block;
+      width: 80%;
+    }
+  }
+  &-img {
+    height: 8rem;
+    margin-bottom: 3rem;
+    img {
+      display: block;
+      margin: 0 auto;
+    }
+  }
+}
+
+.slick-active {
+  outline: none;
+}
+
+.arrow {
+  border: none;
+  background-size: 70%;
+  position: absolute;
+  z-index: 99;
+  width: 2rem;
+  height: 2rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.prev {
+  left: 0;
+  background: url(../img/left-arrow.svg) center no-repeat;
+  background-size: 70%;
+}
+
+.next {
+  right: 0;
+  background: url(../img/right-arrow.svg) center no-repeat;
+  background-size: 70%;
 }
 
 /* Media Settings */
