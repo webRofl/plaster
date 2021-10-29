@@ -33,7 +33,7 @@
                     <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
                         <div class="wrap">
                             <div class="wrap-blog">
-                                <button class="button header-btn">Получить консультацию</button>
+                                <button class="button header-btn popup-btn">Получить консультацию</button>
                             </div>
                         </div>
                     </div>
@@ -125,12 +125,45 @@
         </div>
     </section>
 
+    <!--  Модальное окно  -->
+
+    <div class="popup">
+        <div class="popup-dialog">
+            <div class="popup-content">
+                <button class="popup-close">&times;</button>
+                <h4 class="popup-header">
+                    Заинтересовало?
+                </h4>
+                <p>Оставьте свои контактные данные <br>для связи</p>
+                <div class="main-form popup-form">
+                    <form action="#">
+                        <label for="#">Ваше имя</label>
+                        <input class="main-form-input" type="text">
+                        <label for="#">Номер телефона</label>
+                        <input class="main-form-input" type="text">
+                        <label for="#">Сообщение</label>
+                        <textarea class="main-form-input" rows="5"></textarea>
+                        <button class="main-form-btn button" type="submit">Оставьте заявку</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
     <link rel="stylesheet" href="slick/slick.css">
     <link rel="stylesheet" href="slick/slick-theme.css">
     <script src="slick/slick.min.js"></script>
     <script>
         $(document).ready(function(){
+            $('.popup-btn').on('click', function(event) {
+                event.preventDefault();
+                $('.popup').fadeIn();
+            });
+            $('.popup-close').on('click', function (event) {
+                event.preventDefault();
+                $('.popup').fadeOut();
+            });
             $('.features-slider').slick({
                 infinite: true,
                 slidesToShow: 4,

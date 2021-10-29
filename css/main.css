@@ -26,7 +26,8 @@ a:hover {
 }
 button:focus,
 input:focus,
-a:focus {
+a:focus,
+textarea:focus {
   outline: none;
 }
 .button {
@@ -110,6 +111,7 @@ section {
   border: 1px solid #dddddd;
   width: 100%;
   padding: 1.5rem;
+  border-radius: 5px;
 }
 .main-form label {
   display: inline-block;
@@ -198,6 +200,49 @@ section {
   right: 0;
   background: url(../img/right-arrow.svg) center no-repeat;
   background-size: 70%;
+}
+/* Modal Window Settings */
+.popup {
+  display: none;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.popup-content {
+  position: fixed;
+  left: 50%;
+  top: 10%;
+  background-color: #ffffff;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  padding: 4rem 6rem;
+}
+.popup-form {
+  margin-top: 3rem;
+  padding: 0;
+}
+.popup-close {
+  position: absolute;
+  top: -1.5rem;
+  right: -2rem;
+  width: 2rem;
+  text-align: center;
+  border: none;
+  background-color: transparent;
+  font-size: 3rem;
+  color: #ffffff;
+}
+.popup-content {
+  text-align: center;
+}
+.popup-header {
+  font-family: "Ubuntu_bold", sans-serif;
 }
 /* Media Settings */
 @media (max-width: 1201px) {
