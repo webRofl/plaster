@@ -212,7 +212,7 @@ section {
 }
 /* Price Section Settings */
 .price {
-  background: #46b814 url(img/prices-bg.jpg) center;
+  background: #46b814 url(/practice-glo/img/prices-bg.jpg) center;
 }
 .price-btn {
   text-align: right;
@@ -264,7 +264,69 @@ section {
 .price-button {
   position: absolute;
   bottom: 3%;
-  left: 35%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+/* Feedback Settings */
+.feedback {
+  background: url(../img/feedback/feedback-bg.jpg) no-repeat center;
+  background-size: cover;
+}
+.feedback-prev-btn {
+  left: -4rem;
+}
+.feedback-next-btn {
+  right: -4rem;
+}
+.feedback-text {
+  position: relative;
+  margin-top: 2rem;
+  padding: 1rem;
+  border: 2px solid #46b814;
+  font-style: italic;
+}
+.feedback-text::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -2rem;
+  left: 4rem;
+  width: 2rem;
+  height: 2rem;
+  background-color: #ffffff;
+  border: 2px solid #46b814;
+  border-bottom: none;
+  border-top-right-radius: 100px;
+}
+.feedback-slider {
+  background-color: #ffffff;
+  -webkit-box-shadow: 6px 10px 18px 0px rgba(0, 0, 0, 0.11);
+          box-shadow: 6px 10px 18px 0px rgba(0, 0, 0, 0.11);
+  padding: 5rem 6rem;
+}
+.feedback-slider .media {
+  margin-top: 3rem;
+  font-size: 1.4rem;
+}
+.feedback-slider .media h4 {
+  font-family: "Ubuntu_bold", sans-serif;
+}
+.feedback-slider p {
+  font-size: 1.6rem;
+}
+.feedback-slider-btn {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 4rem;
+  height: 5rem;
+  background-color: #46b814;
+  border: none;
+}
+.feedback-slider-btn img {
+  width: 50%;
 }
 /* Modal Window Settings */
 .popup {
@@ -314,9 +376,6 @@ section {
   .main-content {
     margin-top: 5rem;
   }
-  .price-button {
-    left: 32%;
-  }
 }
 @media (max-width: 991px) {
   .main {
@@ -350,11 +409,13 @@ section {
     margin-bottom: 0;
   }
   .price-button {
-    left: 37%;
     bottom: 6%;
   }
   .price-block {
     margin-top: 2rem;
+  }
+  .feedback-slider {
+    margin: 0 4rem;
   }
 }
 @media (max-width: 557px) {
@@ -368,13 +429,5 @@ section {
   .wrap-blog,
   .logo {
     text-align: center;
-  }
-  .price-button {
-    left: 39%;
-  }
-}
-@media (max-width: 450px) {
-  .price-button {
-    left: 36%;
   }
 }

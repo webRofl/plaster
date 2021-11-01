@@ -254,7 +254,7 @@ section {
 /* Price Section Settings */
 
 .price {
-  background: @icons-color url(img/prices-bg.jpg) center;
+  background: @icons-color url(/practice-glo/img/prices-bg.jpg) center;
   &-btn {
     text-align: right;
   }
@@ -306,7 +306,68 @@ section {
   &-button {
     position: absolute;
     bottom: 3%;
-    left: 35%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+/* Feedback Settings */
+
+.feedback {
+  background: url(../img/feedback/feedback-bg.jpg) no-repeat center;
+  background-size: cover;
+  &-prev-btn {
+    left: -4rem;
+  }
+  &-next-btn {
+    right: -4rem;
+  }
+  &-text {
+    position: relative;
+    margin-top: 2rem;
+    padding: 1rem;
+    border: 2px solid @icons-color;
+    font-style: italic;
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: -2rem;
+      left: 4rem;
+      width: 2rem;
+      height: 2rem;
+      background-color: @light;
+      border: 2px solid @icons-color;
+      border-bottom: none;
+      border-top-right-radius: 100px;
+    }
+  }
+  &-slider {
+    background-color: @light;
+    box-shadow: 6px 10px 18px 0px rgba(0, 0, 0, 0.11);
+    padding: 5rem 6rem;
+    .media {
+      margin-top: 3rem;
+      font-size: 1.4rem;
+      h4 {
+        .bold();
+      }
+    }
+    p {
+      font-size: 1.6rem;
+    }
+    &-btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 4rem;
+      height: 5rem;
+      background-color: @icons-color;
+      border: none;
+      img {
+        width: 50%;
+      }
+    }
   }
 }
 
@@ -360,9 +421,6 @@ section {
   .main-content {
     margin-top: 5rem;
   }
-  .price-button {
-    left: 32%;
-  }
 }
 
 @media (max-width: 991px) {
@@ -399,11 +457,13 @@ section {
     margin-bottom: 0;
   }
   .price-button {
-    left: 37%;
     bottom: 6%;
   }
   .price-block {
     margin-top: 2rem;
+  }
+  .feedback-slider {
+    margin: 0 4rem;
   }
 }
 
@@ -418,14 +478,5 @@ section {
   .wrap-blog,
   .logo {
     text-align: center;
-  }
-  .price-button {
-    left: 39%;
-  }
-}
-
-@media (max-width: 450px) {
-  .price-button {
-    left: 36%;
   }
 }
