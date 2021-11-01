@@ -373,3 +373,8 @@ section {
     left: 39%;
   }
 }
+@media (max-width: 450px) {
+  .price-button {
+    left: 36%;
+  }
+}
