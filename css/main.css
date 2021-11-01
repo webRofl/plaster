@@ -212,7 +212,7 @@ section {
 }
 /* Price Section Settings */
 .price {
-  background: #46b814 url(/practice-glo/img/prices-bg.jpg) center;
+  background: #46b814 url(img/prices-bg.jpg) center;
 }
 .price-btn {
   text-align: right;
