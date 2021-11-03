@@ -414,6 +414,7 @@ section {
 }
 .problems-list {
   border: 4px solid;
+  margin-bottom: 2rem;
   padding: 2rem;
   min-height: 35rem;
 }
@@ -451,9 +452,63 @@ section {
   background: url(../img/problem/problem.svg) center no-repeat;
   background-size: 70%;
 }
+.problems-list_good {
+  border-color: #46b814;
+}
 .problems-list_good ul li::before {
   background: url(../img/problem/check.svg) center no-repeat;
   background-size: 70%;
+}
+/* Materials Settings */
+.materials {
+  background: #ffffff url(../img/material/materials-bg.jpg) center no-repeat;
+  background-size: cover;
+}
+.materials-slider {
+  padding-top: 5rem;
+}
+.materials-link {
+  color: #46b814;
+  border-bottom: 1px dotted #46b814;
+}
+.materials-link:hover {
+  color: #348a0f;
+}
+.materials-offer {
+  margin-top: 4rem;
+}
+.materials img {
+  display: block;
+  margin: 0 auto;
+}
+/* Tour Settings */
+.tour {
+  background: #ffffff url(../img/tour-bg.jpg) center no-repeat;
+  background-size: cover;
+}
+.tour-subtitle {
+  font-size: 2.2rem;
+}
+/* Upsell Settings */
+.upsell {
+  background: #286b0a;
+}
+.upsell-block {
+  min-height: 30rem;
+  text-align: center;
+  color: #ffffff;
+}
+.upsell-blocks {
+  margin-top: 3rem;
+}
+.upsell-block p {
+  font-size: 2rem;
+}
+.upsell-block img {
+  display: inline-block;
+  margin-bottom: 2rem;
+  width: 100%;
+  max-width: 30rem;
 }
 /* Modal Window Settings */
 .popup {
@@ -509,6 +564,9 @@ section {
   .feedback .fotorama {
     margin-bottom: 3rem;
   }
+  .problems-list {
+    min-height: 40rem;
+  }
 }
 @media (max-width: 991px) {
   .main {
@@ -557,8 +615,15 @@ section {
   .feedback .hand {
     display: none;
   }
+  .problems-list {
+    min-height: auto;
+  }
   .problems-woman {
     display: none;
+  }
+  .tour {
+    background: none;
+    background-color: #f5f5f5;
   }
 }
 @media (max-width: 557px) {
@@ -579,5 +644,8 @@ section {
   }
   .scheme-block {
     min-height: auto;
+  }
+  .materials-link-block {
+    display: none;
   }
 }
